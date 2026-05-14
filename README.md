@@ -1,35 +1,76 @@
-# Airbnb-Data-Pipeline
+# Airbnb Data Pipeline
 
-Title: Airbnb Data Pipeline 
+This project builds an end‑to‑end **data pipeline** for Airbnb data, covering extraction, cleaning, transformation, loading, and exploratory analytics on listings, calendar, and reviews data. It demonstrates practical ETL, SQL schema design, and visualization skills using Python and popular data libraries.
 
-Objective: Build an end-to-end data pipeline for Airbnb data (listings, calendar, reviews).
+## 1.Project Overview
 
-Skills: ETL, SQL schema design, Data Cleaning, Analytics, Visualization.
+The main objective is to construct a complete analytics workflow for Airbnb datasets, starting from raw CSV files and ending with structured tables and business insights. The pipeline supports pricing analysis, occupancy trends, and host performance evaluation to inform data‑driven decisions for short‑term rental markets.
 
-Tools: Python (Pandas, SQLite), Matplotlib, Seaborn.
+Key objectives:
 
-Topics covered:
-1. Data Extraction
-2. Transformation
-3. Feature engineering
-4. Loading data
-5. Exploratory analytics
+- Build an ETL pipeline for Airbnb listings, calendar, and reviews data.  
+- Design a SQL‑style schema with appropriate joins and surrogate keys.  
+- Clean and standardize messy raw data, including prices and location fields.  
+- Perform exploratory analytics and visualization to uncover pricing and demand patterns.
 
-Challenges:
-1. Dealing with null values over multiple columns.
-2. Imputing the zipcode column.
-3. Formatting mutiple price columns with missing values.
-4. Schema design with joins and surrogate keys.
+---
+## 2.Features
 
+- **Data extraction**: Load Airbnb data from CSV files into Pandas DataFrames for processing.  
+- **Transformation & cleaning**: Handle null values, format multiple price columns, and standardize key attributes like zipcode.  
+- **Feature engineering**: Create derived metrics that help analyze pricing, occupancy, and host activity.  
+- **SQL schema design**: Define relational tables with joins and surrogate keys to support analytical queries.  
+- **Exploratory analytics**: Generate visual insights on neighborhoods, room types, occupancy, and review behavior.
 
-Conclusion:
-1. Premium pricing neighborhoods identified.
-2. Most reviewed hosts noted - possibly holding many listings.
-3. Occupancy spikes in holiday months - July/August.
-4. Entire homes priced ~2x higher than private rooms and ~3x of shared rooms.
-5. Reviews do not always equal higher prices.
+---
+## 3.Tech Stack
 
-Demonstrated end-to-end ETL pipeline. Designed SQL schema & performed analytical queries. Produced visual insights for business decisions.
+- **Languages & Libraries**  
+  - Python (Pandas) for data manipulation.  
+  - Matplotlib and Seaborn for visualizations.
 
+- **Data & Engineering**  
+  - ETL pipeline design for Airbnb datasets.  
+  - SQL schema thinking for analytics‑ready data models.  
+  - Data cleaning and feature engineering on real‑world style data.
 
+---
+## 4.Topics Covered
 
+The notebooks and code explore the following main steps in the pipeline:
+
+1. Data extraction from raw Airbnb CSVs.  
+2. Transformation and data cleaning across multiple columns.  
+3. Feature engineering for pricing, occupancy, and host behavior.  
+4. Loading cleaned and modeled data into a structured schema.  
+5. Exploratory analytics and visualization of key business metrics.
+
+---
+## 5.Key Challenges Addressed
+
+- Dealing with null values across multiple columns in listings, calendar, and reviews data.  
+- Imputing and standardizing the `zipcode` column.  
+- Formatting and cleaning multiple price columns that include missing values and inconsistent formats.  
+- Designing a robust schema with joins and surrogate keys to support flexible queries.
+
+These challenges closely mirror issues encountered in production‑grade data pipelines.
+
+---
+## 6.Insights & Outputs
+
+The analysis produces several notable insights from the Airbnb data:
+
+- **Premium pricing neighborhoods** are identified, highlighting areas with consistently higher nightly rates.  
+- **Most reviewed hosts** are surfaced, indicating potential power hosts with many listings.  
+- **Occupancy spikes** are observed in holiday months such as July and August, indicating seasonal demand patterns.  
+- **Entire homes** are priced at roughly 2x private rooms and about 3x shared rooms, showing a clear price gradient by room type.  
+- **Review counts** do not always correlate with higher prices, suggesting that popularity and pricing are influenced by different factors.
+
+These outputs are visualized using Matplotlib and Seaborn and can support pricing and supply‑demand decisions.
+
+---
+## 7.Conclusion
+
+This project demonstrates a complete Airbnb data pipeline, from raw files to analytical insights, using solid ETL, schema design, and visualization practices. It provides a reusable framework for analyzing short‑term rental markets and can be extended to more advanced modeling or dashboarding use cases.
+
+---
